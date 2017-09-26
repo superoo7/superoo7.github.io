@@ -1,18 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);@import url(https://fonts.googleapis.com/css?family=Asap+Condensed);@import url(https://fonts.googleapis.com/css?family=VT323);@import url(https://fonts.googleapis.com/css?family=Fira+Mono);@import url(https://fontlibrary.org/face/beon);* {
     padding: 0;
     margin: 0;
-    font-size: 62.5%;
+    font-size: 48%;
+
 }
+
+
 
 a {
     color: #111;
-    font-style: none;
+    text-decoration: none;
 
 }
 
 a:hover, a:active {
     color: #111;
-    font-style: none;
+    text-decoration: none;
 }
 
 h1 {
@@ -25,21 +28,37 @@ p {
     font-size: 2rem;
 
 }
-.-Header-container-qQ2mF7- {
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+   * {
+       font-size: 62.5%;
+   }
+}
+
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 62.5%;
+    }
+}.-Header-container-qQ2mF7- {
     top: 0;
     position: fixed;
     z-index: 4;
-    width: 100%;
+    width: 100vw;
     background: #00AA6C;
-    min-height: 10rem;
+    min-height: 7rem;
     display: flex;
     justify-content: space-between;
+
+}
+
+.-Header-title-3Wcfel- {
+    width: 100%;
 }
 
 .-Header-button-10iHr0- {
     background: transparent;
     font-family: "Fira Mono", monospace;
-    padding: 0 1rem;
+    padding: 0 3rem;
     color: #eee;
     text-decoration: none;
     font-size: 2rem;
@@ -56,10 +75,12 @@ p {
 /* Panels. */
 .-SplitView-splitview-3RfKIm- {
     position: relative;
-    width: 100%;
+    width: 100vw;
     min-height: 50vw;
     overflow: hidden;
-    margin-top: 10rem;
+    margin-top: 6rem;
+    user-select: none;
+
 }
 
 .-SplitView-panel-BBj_-X- {
@@ -121,6 +142,7 @@ p {
     height: 100%;
     position: absolute;
     display: block;
+    border: none;
     background-color: #26C384;
     width: 5px;
     top: 0;
@@ -131,7 +153,8 @@ p {
 /* Skewed. */
 .-SplitView-skewed-2qga3g- .-SplitView-handle--M1Lx5- {
     top: 50%;
-    transform: rotate(30deg) translateY(-50%);
+    border: none;
+    transform: rotate(10deg) translateY(-50%);
     height: 200%;
     -webkit-transform-origin: top;
     -moz-transform-origin: top;
@@ -139,13 +162,13 @@ p {
 }
 
 .-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- {
-    transform: skew(-30deg);
+    transform: skew(-10deg);
     margin-left: -1000px;
     width: calc(50vw + 1000px);
 }
 
 .-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- .-SplitView-content-1xD9ux- {
-    transform: skew(30deg);
+    transform: skew(10deg);
     margin-left: 1000px;
 }
 
@@ -183,6 +206,28 @@ p {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 768px) {
+    /* Skewed. */
+    .-SplitView-skewed-2qga3g- .-SplitView-handle--M1Lx5- {
+        top: 50%;
+        border: none;
+        transform: rotate(20deg) translateY(-50%);
+        height: 200%;
+        -webkit-transform-origin: top;
+        -moz-transform-origin: top;
+        transform-origin: top;
+    }
+
+    .-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- {
+        transform: skew(-20deg);
+        margin-left: -1000px;
+        width: calc(50vw + 1000px);
+    }
+
+    .-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- .-SplitView-content-1xD9ux- {
+        transform: skew(20deg);
+        margin-left: 1000px;
+    }
+
     .-SplitView-coder-title-5WB-eT- {
         font-size: 4rem;
     }
@@ -198,6 +243,29 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+    /* Skewed. */
+    .-SplitView-skewed-2qga3g- .-SplitView-handle--M1Lx5- {
+        top: 50%;
+        border: none;
+        transform: rotate(30deg) translateY(-50%);
+        height: 200%;
+        -webkit-transform-origin: top;
+        -moz-transform-origin: top;
+        transform-origin: top;
+    }
+
+    .-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- {
+        transform: skew(-30deg);
+        margin-left: -1000px;
+        width: calc(50vw + 1000px);
+    }
+
+    .-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- .-SplitView-content-1xD9ux- {
+        transform: skew(30deg);
+        margin-left: 1000px;
+    }
+
+
     .-SplitView-coder-title-5WB-eT- {
         font-size: 5rem;
     }
@@ -210,4 +278,78 @@ p {
     .-SplitView-ee-desc-2DiGn8- {
         font-size: 2.3rem;
     }
+}.-Footer-footer-2dyxGj- {
+    z-index: 4;
+    color: #fff;
+    font-family: "Fira Mono", monospace;
+    font-size: 2rem;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #00AA6C;
+}
+
+.-Footer-el-Zl9BY9- {
+    padding: 1rem;
+}
+
+.-Footer-el1-YU3npF- {
+}
+
+.-Footer-el2-1q41MI- {
+
+}
+
+.-Footer-el3-QBDy_2- {
+
+}
+
+.-NotFound-container-2uAeJU- {
+  width: 100%;
+  min-height: 55vw;
+  background: #eee;
+}
+
+.-NotFound-content-1u0sBC- {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.-NotFound-superoo7-KL3Gr9- {
+  max-width: 100%;
+  height: auto;
+}
+
+.-NotFound-title-2edBrm- {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.-NotFound-button-6Nilg_- {
+  text-align: center;
+  font-family: "Fira Mono", monospace;
+  padding: 1rem;
+  color: #26C384;
+  font-size: 2rem;
+  background-color: white;
+  border: 2px solid #26C384; /* Green */
+}
+
+.-NotFound-button-6Nilg_-:hover {
+  color: #26C384;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.-NotFound-button-6Nilg_-:active {
+  color: #eee;
 }
