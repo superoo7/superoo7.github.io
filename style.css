@@ -25,6 +25,32 @@ p {
     font-size: 2rem;
 
 }
+.-Header-container-qQ2mF7- {
+    top: 0;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    background: #00AA6C;
+    min-height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.-Header-button-10iHr0- {
+    background: transparent;
+    font-family: "Fira Mono", monospace;
+    padding: 0 1rem;
+    color: #eee;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.-Header-button-10iHr0-:hover {
+    color: #fff;
+}
 
 
 /* Panels. */
@@ -33,6 +59,7 @@ p {
     width: 100%;
     min-height: 50vw;
     overflow: hidden;
+    margin-top: 10rem;
 }
 
 .-SplitView-panel-BBj_-X- {
