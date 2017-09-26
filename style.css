@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);@import url(https://fonts.googleapis.com/css?family=Asap+Condensed);@import url(https://fonts.googleapis.com/css?family=VT323);@import url(https://fonts.googleapis.com/css?family=Fira+Mono);@import url(https://fontlibrary.org/face/beon);* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+a {
+    color: #111;
+    font-style: none;
+
+}
+
+a:hover, a:active {
+    color: #111;
+    font-style: none;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+p {
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 2rem;
+
+}
+
+
+/* Panels. */
+.-SplitView-splitview-3RfKIm- {
+    position: relative;
+    width: 100%;
+    min-height: 50vw;
+    overflow: hidden;
+}
+
+.-SplitView-panel-BBj_-X- {
+    position: absolute;
+    width: 100vw;
+    min-height: 50vw;
+    overflow: hidden;
+}
+
+.-SplitView-panel-BBj_-X- .-SplitView-content-1xD9ux- {
+    position: absolute;
+    width: 100vw;
+    min-height: 50vw;
+    color: #FFF;
+}
+
+.-SplitView-panel-BBj_-X- .-SplitView-description-2CeI7F- {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.-SplitView-panel-BBj_-X- img {
+    /*box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);*/
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.-SplitView-bottom-18qKqH- {
+    background-color: rgb(44, 44, 44);
+    z-index: 1;
+}
+
+.-SplitView-bottom-18qKqH- .-SplitView-description-2CeI7F- {
+    right: 5%;
+}
+
+.-SplitView-top-2xYbIt- {
+    background-color: #26C384;
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+.-SplitView-top-2xYbIt- .-SplitView-description-2CeI7F- {
+    left: 5%;
+}
+
+/* Handle. */
+.-SplitView-handle--M1Lx5- {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: #26C384;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.-SplitView-skewed-2qga3g- .-SplitView-handle--M1Lx5- {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.-SplitView-skewed-2qga3g- .-SplitView-top-2xYbIt- .-SplitView-content-1xD9ux- {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+/* Font */
+.-SplitView-coder-title-5WB-eT- {
+    text-align: right;
+    font-family: 'Fira Mono', monospace;
+    font-size: 2rem;
+}
+
+
+
+@-webkit-keyframes -SplitView-blink-caret-3j8m-8- { 50% { border-color: transparent; } }
+
+.-SplitView-coder-desc-uo6UsG- {
+    text-align: right;
+    font-family: 'Fira Mono', monospace;
+    font-size: 1rem;
+    border-right: .7rem solid #fff;
+
+    -webkit-animation: -SplitView-blink-caret-3j8m-8- .5s step-end infinite alternate;
+}
+
+.-SplitView-ee-title-ia0AwL- {
+    text-align: left;
+    font-family: 'Beon', monospace;
+    font-size: 2rem;
+}
+
+.-SplitView-ee-desc-2DiGn8- {
+    text-align: left;
+    font-family: 'BeonRegular', monospace;
+    font-size: 1rem;
+    /*margin: 2em 1em;*/
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .-SplitView-coder-title-5WB-eT- {
+        font-size: 4rem;
+    }
+    .-SplitView-coder-desc-uo6UsG- {
+        font-size: 1.3rem;
+    }
+    .-SplitView-ee-title-ia0AwL- {
+        font-size: 4rem;
+    }
+    .-SplitView-ee-desc-2DiGn8- {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .-SplitView-coder-title-5WB-eT- {
+        font-size: 5rem;
+    }
+    .-SplitView-coder-desc-uo6UsG- {
+        font-size: 2.3rem;
+    }
+    .-SplitView-ee-title-ia0AwL- {
+        font-size: 5rem;
+    }
+    .-SplitView-ee-desc-2DiGn8- {
+        font-size: 2.3rem;
+    }
+}
