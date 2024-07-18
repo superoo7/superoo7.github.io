@@ -1,0 +1,9 @@
+{{ $src := .Get "src" }} {{ $alt := .Get "alt" }} {{ $captin := .Get "caption"
+}}
+
+<div class="center">
+  <img src="{{ $src }}" alt="{{ $alt }}" decoding="async" />
+  {{ with $captin }}
+  <div class="caption">{{ . }}</div>
+  {{ end }}
+</div>

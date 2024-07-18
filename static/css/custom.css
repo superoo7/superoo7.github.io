@@ -1,0 +1,13 @@
+
+body {
+    line-height: 1.6em; 
+}
+
+.center {
+    text-align: center;
+  }
+
+.caption {
+    font-size: 90%;
+    color: #555;
+}

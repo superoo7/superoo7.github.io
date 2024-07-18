@@ -1,0 +1,5 @@
+{
+    // ignore search in /themes
+    "search.exclude": {
+    }
+}
