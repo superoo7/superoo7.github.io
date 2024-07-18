@@ -13,7 +13,7 @@ series = []
 
 In this guide, I will walk you through the process of running Chasm Scout in Season 0 using Digital Ocean. Please note that you should always refer to the [Official Guide from Chasm Network](https://network-docs.chasm.net/)  for the most up-to-date information.
 
-We've chosen Digital Ocean for two main reasons:
+I've chosen Digital Ocean for two main reasons:
 - It's easy to use, especially for those new to cloud services.
 - Unlike AWS or GCP, it doesn't require going through a complex DevOps process.
 
