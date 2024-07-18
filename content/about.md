@@ -51,7 +51,9 @@ Self-taught engineer and [UWA](https://www.uwa.edu.au/) alum, currently Cofounde
   - (Quanstamp) Most Creative Solution
   - (Worldcoin) Honorable Mention
   - (Polygon) Pool Prize
+- Utopian Hackathon 2018: [Steem Web Wallet](https://swallet.netlify.app/)
 
 ## Open Source Projects
 
 - [go-gecko](https://github.com/superoo7/go-gecko)
+- [steem-web-wallet](https://github.com/superoo7/steem_web_wallet)
