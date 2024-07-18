@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>superoo7</title>
+    <link>http://www.superoo7.com/</link>
+    <description>Recent content on superoo7</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jul 2024 08:20:18 +0800</lastBuildDate>
+    <atom:link href="http://www.superoo7.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://www.superoo7.com/about/</link>
+      <pubDate>Thu, 18 Jul 2024 08:20:18 +0800</pubDate>
+      <guid>http://www.superoo7.com/about/</guid>
+      <description> About Me Link to heading Previous experience Link to heading [06/2017 - 01/2018] PhytoMark [12/2018 - 02/2022] CoinGecko Software Engineer Product Engineer Senior Mobile Engineer Senior R&amp;amp;D Engineer [2020] ETHKL Co-Organizer [2022] Pacer Head Of Product Product Advisor [06/2021-11/2021] Hooga Gaming COO CTO [11/2021-Now] Chasm Network Cofounder &amp;amp; CTO My work Link to heading Talks Link to heading Breaking Down the Current State of Decentralized AI (Jun 5, 2024) The Synergy of AI and Web 3 (Jun 17, 2023) Dead Man Switch&amp;rsquo;s Smart Contract (Feb 6, 2020) Publication Link to heading Chasm Protocol: Pioneering the evolution of AI with Decentralized Panel of Experts and Blockchain Integration (2024) Understanding Risk of Rebase Tokens Through Smart Contract Analysis (August 16, 2020) Open Source Projects Link to heading go-gecko </description>
+    </item>
+  </channel>
+</rss>
