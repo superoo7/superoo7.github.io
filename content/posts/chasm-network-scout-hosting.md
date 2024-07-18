@@ -19,6 +19,7 @@ This guide aims to provide a simple, step-by-step approach for those unfamiliar 
 
 Visit https://scout.chasm.net
 
+[Mint](/images/chasm-scout/mint.gif)
 
 ## Step 2: Get Groq API Key
 
