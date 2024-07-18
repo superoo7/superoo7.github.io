@@ -42,12 +42,12 @@ Self-taught engineer and [UWA](https://www.uwa.edu.au/) alum, currently Cofounde
 - [Breaking Down the Current State of Decentralized AI](https://www.youtube.com/live/Ewp9Q60Kj2k?si=9rnz_oyygW-TvqJd&t=993) (Jun 5, 2024)
 - [The Synergy of AI and Web 3](https://www.youtube.com/live/oyY0OG1IEp0?si=dzDbmvBRoN3QXhCX&t=1556) (Jun 17, 2023)
 - [Dead Man Switch's Smart Contract](https://www.youtube.com/watch?v=rEVk8-un-2k) (Feb 6, 2020)
-- [How NFT works?](https://superoo7.github.io/ethkl-nft/) (Oct 3, 2019)
+- [How NFT works?](https://superoo7.com/ethkl-nft/#/) (Oct 3, 2019)
 
 ## Hackathon
 
 - Finalist for ETHKL 2023 Hackathon: [PenguMon](https://devfolio.co/projects/pengumon-bf2a) (Oct 13, 2023)
-- ETHGlobal Tokyo 2023 [PPSwap](https://ethglobal.com/showcase/ppswap-84ikz) (Apr 16, 2023)
+- ETHGlobal Tokyo 2023: [PPSwap](https://ethglobal.com/showcase/ppswap-84ikz) (Apr 16, 2023)
   - (Quanstamp) Most Creative Solution
   - (Worldcoin) Honorable Mention
   - (Polygon) Pool Prize
