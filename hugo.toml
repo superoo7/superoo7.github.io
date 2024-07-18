@@ -16,7 +16,7 @@ style = "github-dark"
 [params]
   author = "Johnson Lai"
   info = "Crypto x AI"
-  description = "John Doe's personal website"
+  description = "Johnson · Crypto x AI"
   keywords = "blog,developer,personal"
   avatarurl = "images/joker.jpg"
   #gravatar = "john.doe@example.com"

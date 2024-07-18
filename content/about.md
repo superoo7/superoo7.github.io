@@ -6,22 +6,24 @@ draft = false
 
 # About Me
 
+Self-taught engineer and [UWA](https://www.uwa.edu.au/) alum, currently Cofounder/CTO at Chasm Network (decentralized AI). Former COO/CTO at Hooga Gaming and R&D & mobile engineer at CoinGecko. Passionate about blockchain, AI, and building product.
+
 # Previous experience
 
-- [06/2017 - 01/2018] PhytoMark
-- [12/2018 - 02/2022] [CoinGecko](https://www.coingecko.com)
+- **[06/2017 - 01/2018]** PhytoMark
+- **[12/2018 - 02/2022]** [CoinGecko](https://www.coingecko.com)
     - Software Engineer
     - Product Engineer
     - Senior Mobile Engineer
     - Senior R&D Engineer
-- [2020] [ETHKL](https://www.ethkl.org/) Co-Organizer
-- [2022] [Pacer](https://twitter.com/pacer_gg) 
+- **[2020]** [ETHKL](https://www.ethkl.org/) Co-Organizer
+- **[2022]** [Pacer](https://twitter.com/pacer_gg) 
     - Head Of Product
     - Product Advisor
-- [06/2021-11/2021] [Hooga Gaming](https://hooga.gg)
+- **[06/2021 - 11/2023]** [Hooga Gaming](https://hooga.gg)
     - COO
     - CTO
-- [11/2021-Now] [Chasm Network](https://chasm.network)
+- **[11/2023 - Now]** [Chasm Network](https://chasm.network)
     - Cofounder & CTO
 
 
