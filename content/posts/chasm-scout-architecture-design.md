@@ -19,6 +19,28 @@ We're excited to announce that we have open-sourced the [Chasm Scout codebase](h
 
 Over the past 4 months, our team has worked diligently to transform this concept into a functional protocol. Here's an article on the architecture design choices of Chasm Network Scout Node.
 
+## The good thing of Bittensor
+
+The journey that led to Chasm Scout began with hands-on experience in the [Bittensor network](https://bittensor.com/). 
+
+John, my co-founder, and I immersed ourselves in running nodes and optimizing miners on Bittensor subnets. Despite my background with blockchain nodes since 2017 & John who is an early adopters of Bitcoin, we both faced challenges – losing money running miners or getting miners deregistered from the network is quite common.
+
+We found ourselves constantly improvising, even creating tools to track our mining activities and scripts to auto-claim rewards and bid for subnets registration when it's cheap.
+
+{{< twitter user="jlwhoo7" id="1762130523005284682" >}}
+
+This collaborative experience highlighted a crucial need: to make decentralized AI networks more user-friendly. 
+
+We observed many newcomers struggling to host nodes, often paying for setup help, which reminded us of the early days of Bitcoin and Ethereum. Some of these users even fall prey to bad actors trying to phish for their information or hack their wallets by providing false information and acting as helpers.
+
+{{< figure width="65%" src="/images/scout-design/chasm-bittensor.png" caption="Chasm inspired by Bittensor" >}}
+
+These insights drove our vision for Chasm Scout. We aimed to preserve the innovative spirit of projects like Bittensor while improving accessibility. 
+
+Our goal became twofold: create a system that newcomers could set up easily and affordably, while still allowing experienced users to optimize their setups.
+
+While we're still learning and improving, we hope Chasm Scout can help bridge the gap between complex technology and user-friendly experiences in decentralized AI.
+
 ## What is Chasm Protocol
 
 Chasm Protocol is our attempt to create a network where AI systems can work together efficiently to solve complex problems. Think of it as a team of AI experts, each with its own specialty, collaborating to provide the best possible answers and solutions. 
@@ -56,27 +78,7 @@ We opted for more developer-friendly solutions like Docker instead of asking use
 
 It's been a learning process for us, and we're continually working to improve and simplify things based on user feedback. While we've made progress, we know there's still room for improvement in making Chasm Scout truly accessible to everyone.
 
-## The good thing of Bittensor
 
-The journey that led to Chasm Scout began with hands-on experience in the [Bittensor network](https://bittensor.com/). 
-
-John, my co-founder, and I immersed ourselves in running nodes and optimizing miners on Bittensor subnets. Despite my background with blockchain nodes since 2017 & John who is an early adopters of Bitcoin, we both faced challenges – losing money running miners or getting miners deregistered from the network is quite common.
-
-We found ourselves constantly improvising, even creating tools to track our mining activities and scripts to auto-claim rewards and bid for subnets registration when it's cheap.
-
-{{< twitter user="jlwhoo7" id="1762130523005284682" >}}
-
-This collaborative experience highlighted a crucial need: to make decentralized AI networks more user-friendly. 
-
-We observed many newcomers struggling to host nodes, often paying for setup help, which reminded us of the early days of Bitcoin and Ethereum. Some of these users even fall prey to bad actors trying to phish for their information or hack their wallets by providing false information and acting as helpers.
-
-{{< figure width="65%" src="/images/scout-design/chasm-bittensor.png" caption="Chasm inspired by Bittensor" >}}
-
-These insights drove our vision for Chasm Scout. We aimed to preserve the innovative spirit of projects like Bittensor while improving accessibility. 
-
-Our goal became twofold: create a system that newcomers could set up easily and affordably, while still allowing experienced users to optimize their setups.
-
-While we're still learning and improving, we hope Chasm Scout can help bridge the gap between complex technology and user-friendly experiences in decentralized AI.
 
 
 ## Technical Stack
