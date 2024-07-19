@@ -13,31 +13,34 @@ series = []
 
 At Chasm, we believe the future of deAI is open-source.
 
-We're excited to announce that we have open-sourced the [Chasm Scout codebase](https://github.com/ChasmNetwork/chasm-scout), which is  aimed at democratizing access to Decentralized AI networks. 
+{{< twitter user="ChasmNetwork" id="1814292355387932948"  >}}
 
-> If you are new to operating nodes, no need to fret! We made sure Chasm Scout m to be one of the easiest nodes to set up, so easy that even a 5-year old can do it. Here is a  [step-by-step guide on How to run Chasm Season 0 Scout Node](https://superoo7.com/posts/chasm-network-scout-hosting/). We promise it’ll only take 15-30 minutes of your time at most.
+We're excited to announce that we have open-sourced the [Chasm Scout codebase](https://github.com/ChasmNetwork/chasm-scout), which is aimed at democratizing access to Decentralized AI networks. 
+
+> If you are new to operating nodes, no need to fret! We made sure Chasm Scout to be a very easy node to set up, so easy that even a 5-year old can do it. Here is a  [step-by-step guide on How to run Chasm Season 0 Scout Node](https://superoo7.com/posts/chasm-network-scout-hosting/). We promise it’ll only take 15-30 minutes of your time.
+
 
 Over the past 4 months, our team has worked diligently to transform this concept into a functional protocol. Here's an article on the architecture design choices of Chasm Network Scout Node.
 
-## The good thing of Bittensor
+## Our experience with Bittensor
 
-The journey that led to Chasm Scout began with hands-on experience in the [Bittensor network](https://bittensor.com/). 
+The journey that led to Chasm Scout began with plenty of hands-on experience within the [Bittensor network](https://bittensor.com/). 
 
-John, my co-founder, and I immersed ourselves in running nodes and optimizing miners on Bittensor subnets. Despite my background with blockchain nodes since 2017 & John who is an early adopters of Bitcoin, we both faced challenges – losing money running miners or getting miners deregistered from the network is quite common.
+John (@johnkmj), my co-founder, and I immersed ourselves in running nodes and optimizing miners on Bittensor subnets. Despite having a background with blockchain nodes since 2017 & John, who is an early adopter/miner of Bitcoin, we both faced challenges – burning a bunch of TAO running miners and getting miners deregistered from the network.
 
-We found ourselves constantly improvising, even creating tools to track our mining activities and scripts to auto-claim rewards and bid for subnet registration when it's cheap.
+We found ourselves constantly improvising, even creating tools to track our mining activities and scripts to auto-claim rewards and put in subnet registration bids when it's cheap.
 
 {{< twitter user="jlwhoo7" id="1762130523005284682" >}}
 
-This collaborative experience highlighted a crucial need: to make decentralized AI networks more user-friendly. 
+This collaborative experience highlighted a crucial need. For deAI to take off as a movement, decentralized AI networks need to be A LOT more user-friendly. 
 
 We observed many newcomers struggling to host nodes, often paying for setup help, which reminded us of the early days of Bitcoin and Ethereum. Some of these users even fall prey to bad actors trying to phish for their information or hack their wallets by providing false information and acting as helpers.
 
 {{< figure width="65%" src="/images/scout-design/chasm-bittensor.png" caption="Chasm inspired by Bittensor" >}}
 
-These insights drove our vision for Chasm Scout. We aimed to preserve the innovative spirit of projects like Bittensor while improving accessibility. 
+These insights drove our vision for Chasm Scout. We aimed to preserve the innovative spirit of projects like Bittensor while vastly improving accessibility. 
 
-Our goal became twofold: create a system that newcomers could set up easily and affordably, while still allowing experienced users to optimize their setups.
+Our goal became twofold: create a system that newcomers could set up easily and affordably, while still allowing experienced users to deeply optimize their setups.
 
 While we're still learning and improving, we hope Chasm Scout can help bridge the gap between complex technology and user-friendly experiences in decentralized AI.
 
@@ -56,21 +59,21 @@ When an Orchestrator receives a request, it creates a plan (we call it a "Scroll
 
 These Scouts then work on their assigned parts and pass the results along until the entire task is complete. We're trying to make this system efficient, cost-effective, and capable of handling a wide range of AI-related tasks. 
 
-While we're excited about its potential, we're also aware that there's still much to learn and improve as we continue to develop Chasm.
+
+At the core of Chasm Protocol is what we call Decentralized Mixture of Experts (DeMoE). Imagine a large, diverse team where each member is an expert in a specific field. In DeMoE, our Scouts act as these experts, each specializing in different areas like creative writing, technical analysis, or game character design. When a task comes in, instead of one big AI trying to do everything, we route it to the Scouts best suited for that particular job. This approach allows for more focused, efficient, and accurate results. We're constantly evaluating and rewarding the best-performing Scouts, which encourages ongoing improvement. While it's a complex system under the hood, our goal is to make it work seamlessly for users, providing them with the benefits of specialized expertise without the complexity.
+While we're excited about its potential, we're also aware that there's still much to improve as we continue to develop Chasm.
+
 
 [Read more about Chasm Protocol](https://chasm.net/litepaper)
 
 ## The Challenge: Designing for Accessibility
 
-Designing a beginner-friendly Scout Nodes is never easy, we had to take in consideration of people with diverse background that are not familiar with DevOps, VPS etc, with some of them running nodes for the first time.
-
-To achieve this, the easiest way is to reduce the number of steps & installation needed. Making small design decisions like using Docker instead of git pulling the repo and build from source, using easy to setup configuration etc. 
-
-One of our biggest challenges in developing Chasm Scout was making it accessible to everyone, including those who might be setting up a node for the first time. We realized that many potential users might not be familiar with complex technical concepts or tools often used in decentralized systems. 
+Designing a beginner-friendly Scout Nodes hasn’t been easy, we had to consider that people may not be familiar with DevOps, VPS etc, with many of them running nodes for the first time.
 
 Our goal was to create something that didn't require extensive technical knowledge to use. 
 
-To achieve this, we focused on simplifying the setup process, reducing the number of steps needed to get started, and minimizing the technical know-how required. 
+
+To achieve this, we believe the easiest way is to reduce the number of steps needed. We’ve made small design decisions like using Docker instead of git pulling the repo and build from source, using easy to setup configuration etc. 
 
 For example, 
 
@@ -83,17 +86,17 @@ It's been a learning process for us, and we're continually working to improve an
 
 ## Technical Stack
 
-Our team consists of 3 engineers, multitasking to design and build this node. We had to maintain good quality of code while handling various aspects: Onchain, Offchain, Scout, Orchestrator, UI. Essentially, we are building an “L1” with many offchain mechanisms. This is quite challenging, especially with such a small team.
+Our node team consists of 3 engineers. We had to maintain good quality of code while handling various aspects: Onchain, Offchain, Scout, Orchestrator, UI. Essentially, we are building an “L1” with many offchain mechanisms. This is quite challenging, especially with such a small team.
 
-However, a small team brings agility. We are able to adapt much quicker than larger teams. The AI space is moving fast, and being agile is one of our competitive advantages.
+However, a small team brings agility. We are able to adapt much quicker than larger teams. The AI space is moving fast, and I believe being agile is one of our competitive advantages.
 
-The key to building this is “Subtraction.” We had to pick what was important and what was not. We frequently discussed what features we could ship and what to deprioritize.
+The key to building this is “Subtraction.” We had to identify what was important and what was not. We frequently discussed what features we could ship and what to deprioritize.
 
 We initially considered launching Chasm on Bittensor, but scaling beyond 10k nodes on Bittensor is not only expensive but also tough, dealing with Asynchronous in Python and the overhead of blockchain (Bittensor is a forked of Polkadot).
 
 With a lean team, we decided to implement a lightweight “Orchestrator” and consider >10k scouts running concurrently. This design allows for vertical scaling of Orchestrator if needed at an early stage, with consensus achieved through a “Horizontal Scaling” mindset.
 
-We released the idea of our own network with our Litepaper back in April, and the work began. It took us 2 months to build the initial alpha test release and less than 4 months for Chasm Season 0.
+We released the idea of our own network with [our Litepaper](https://chasm.net/litepaper) back in April, and the work began. It took us 2 months to build the initial alpha test release and less than 4 months for Chasm Season 0.
 
 ### Programming Language
 
@@ -103,15 +106,15 @@ After some internal discussions, we decided to implement our entire stack in Typ
 
 ### Integration
 
-We have integrated [Groq](https://groq.com/) and [OpenRouter](https://openrouter.ai/), API-based LLM providers. We plan to allow users to run their GPU down the road via vLLM/ollama, as we have many enthusiastic scouts wanting to make use of their GPU.
+We have integrated [Groq](https://groq.com/) and [OpenRouter](https://openrouter.ai/), API-based LLM providers. We plan to allow users to run their GPU down the road via vLLM/ollama, as we have many enthusiastic scouts that are already participating in Season 0 wanting to make use of their GPU.
 
 ### Webhook VS Websocket VS RPC
 
-Most blockchains use RPC to communicate between nodes. Since we want to have an easy entry barrier for Scout Nodes, we decided to use REST-based Webhooks. Webhooks can be easily scaled, and we don't need the scout to constantly be connected to the Orchestrator.
+Most blockchains use RPC to communicate between nodes. Since we want to have an easy entry barrier for Scout Nodes, we decided to use REST-based Webhooks. The reason for this is that webhooks can be easily scaled, and we don't need scouts to constantly be connected to the Orchestrator.
 
 ### API Key vs Private Key
 
-We have heard about Private Key leaks from time to time, even when the Private Key is encrypted. When users want to sign transactions, they still need the Private Key to be on run time. A common practice would be to allow multiple permissions on the blockchain layer, like some DPOS networks (EOS, Steem, Bitshare) with multiple keys for different purposes. However, this adds complexity for users. We decided to use API Key for safety, and users just need to use our dashboard to sign a tx to regenerate the API key.
+We have heard about private key leaks from time to time, even when the Private Key is encrypted. When users want to sign transactions, they still need the Private Key to be on run time. A common practice would be to allow multiple permissions on the blockchain layer, like some DPOS networks (EOS, Steem, Bitshare) with multiple keys for different purposes. However, this adds complexity for users. We decided to use API Key for safety, and users just need to use our dashboard to sign a tx to regenerate the API key.
 
 ### Performance
 
@@ -150,17 +153,15 @@ We have integrated end-to-end AI tests into our CI pipeline, ensuring seamless i
 
 ## Road to Decentralization
 
-Currently, for Scout Season 0, our network defo not fully decentralized, but it is part of our future roadmap. We are proceeding with caution, aware of the overfitting models issue on some of the Bittensor subnets, which makes the model hosted there unusable. This is unavoidable when the network open sources the weights and data being trained.
+As of Scout Season 0, our network is not fully decentralized, but it is a key part of our roadmap. We are proceeding with caution, aware of the overfitting models issue on some of the Bittensor subnets, which makes some models hosted there practically unusable. This is unavoidable when the network open sources the weights and data used for training.
 
 At Chasm, our decentralization plan involves “Horizontally Scaling” the orchestrator through Proof of Authority (POA), initially trusting only a few orchestrators.
 
 
 ## Conclusion
 
-This is just our first step towards decentralized AI. A better UX and DX of running the network.
+This is just our first step towards decentralized AI. 
 
-We hope that by sharing our experience, we can contribute to the ongoing conversation about the future of decentralized AI infrastructure and invite feedback from the community.
+I'm planning to share more detailed articles about our network and orchestrator soon. 
 
-I will write more detailed implementation articles about how the network and orchestrator work later. This article focuses more on the Scout.
-
-Follow [me](https://x.com/jlwhoo7) and [Chasm Network](https://x.com/chasmnetwork) on X/Twitter to stay updated.
+Your thoughts and feedback are invaluable to us as we work on making this technology more accessible. If you have any questions or ideas, please don't hesitate to reach out to me on [Twitter/X](https://x.com/jlwhoo7). Let's keep the conversation going and see where we can take decentralized AI together.
