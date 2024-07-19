@@ -142,9 +142,9 @@ You can save the `.env` file and exit Nano via Ctrl + x (`^X`),`Y`, `Enter`
 
 ```sh
 # Pull the code from DockerHub
-docker pull johnsonchasm/chasm-scout
+docker pull chasmtech/chasm-scout
 # Start the docker file
-docker run -d --restart=always --env-file ./.env -p 3001:3001 --name scout johnsonchasm/chasm-scout
+docker run -d --restart=always --env-file ./.env -p 3001:3001 --name scout chasmtech/chasm-scout
 ```
 
 ### V: Verify
