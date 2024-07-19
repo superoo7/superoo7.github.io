@@ -26,7 +26,7 @@ Over the past 4 months, our team has worked diligently to transform this concept
 
 The journey that led to Chasm Scout began with plenty of hands-on experience within the [Bittensor network](https://bittensor.com/). 
 
-John (@johnkmj), my co-founder, and I immersed ourselves in running nodes and optimizing miners on Bittensor subnets. Despite having a background with blockchain nodes since 2017 & John, who is an early adopter/miner of Bitcoin, we both faced challenges – burning a bunch of TAO running miners and getting miners deregistered from the network.
+John ([@johnkmj](https://x.com/johnkmj)), my co-founder, and I immersed ourselves in running nodes and optimizing miners on Bittensor subnets. Despite having a background with blockchain nodes since 2017 & John, who is an early adopter/miner of Bitcoin, we both faced challenges – burning a bunch of TAO running miners and getting miners deregistered from the network.
 
 We found ourselves constantly improvising, even creating tools to track our mining activities and scripts to auto-claim rewards and put in subnet registration bids when it's cheap.
 
