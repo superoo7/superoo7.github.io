@@ -25,7 +25,7 @@ The journey that led to Chasm Scout began with hands-on experience in the [Bitte
 
 John, my co-founder, and I immersed ourselves in running nodes and optimizing miners on Bittensor subnets. Despite my background with blockchain nodes since 2017 & John who is an early adopters of Bitcoin, we both faced challenges – losing money running miners or getting miners deregistered from the network is quite common.
 
-We found ourselves constantly improvising, even creating tools to track our mining activities and scripts to auto-claim rewards and bid for subnets registration when it's cheap.
+We found ourselves constantly improvising, even creating tools to track our mining activities and scripts to auto-claim rewards and bid for subnet registration when it's cheap.
 
 {{< twitter user="jlwhoo7" id="1762130523005284682" >}}
 
@@ -50,7 +50,7 @@ Chasm Protocol is our attempt to create a network where AI systems can work toge
 At the heart of Chasm Protocol are two key components: Orchestrators and Scouts. 
 - **Orchestrators** are like project managers. They receive requests (which we call "intents") from users, break them down into smaller tasks, and figure out the best way to get them done. 
 
-- **Scouts**, are like specialized & skilled workers. Each scout is capable of handling specific parts of a task. 
+- **Scouts** are like specialized & skilled workers. Each scout is capable of handling specific parts of a task. 
 
 When an Orchestrator receives a request, it creates a plan (we call it a "Scroll") and sends it to the most suitable Scouts. 
 
@@ -89,7 +89,7 @@ However, a small team brings agility. We are able to adapt much quicker than lar
 
 The key to building this is “Subtraction.” We had to pick what was important and what was not. We frequently discussed what features we could ship and what to deprioritize.
 
-We initially considered launching Chasm on Bittensor, but scaling beyond 10k nodes on Bittensor is not only expensive but also tough, dealing with Asynchronous in Python and the overhead of blockchain using Polkadot as a base.
+We initially considered launching Chasm on Bittensor, but scaling beyond 10k nodes on Bittensor is not only expensive but also tough, dealing with Asynchronous in Python and the overhead of blockchain (Bittensor is a forked of Polkadot).
 
 With a lean team, we decided to implement a lightweight “Orchestrator” and consider >10k scouts running concurrently. This design allows for vertical scaling of Orchestrator if needed at an early stage, with consensus achieved through a “Horizontal Scaling” mindset.
 
@@ -152,7 +152,8 @@ We have integrated end-to-end AI tests into our CI pipeline, ensuring seamless i
 
 Currently, for Scout Season 0, our network defo not fully decentralized, but it is part of our future roadmap. We are proceeding with caution, aware of the overfitting models issue on some of the Bittensor subnets, which makes the model hosted there unusable. This is unavoidable when the network open sources the weights and data being trained.
 
-At Chasm, our decentralization plan involves “Horizontally Scaling” the orchestrator through Proof of Authority (POA), initially trusting only a few orchestrators. 
+At Chasm, our decentralization plan involves “Horizontally Scaling” the orchestrator through Proof of Authority (POA), initially trusting only a few orchestrators.
+
 
 ## Conclusion
 
