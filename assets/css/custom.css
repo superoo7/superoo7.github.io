@@ -1,0 +1,9 @@
+body {
+  line-height: 1.6em;
+}
+
+.twitter-tweet-rendered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
