@@ -1,5 +1,11 @@
 <li class="post-item">
-  <img src="{{ index (.Params.images) 0 }}" />
+  <a href="{{ .Params.externalLink | default .RelPermalink }}"
+    ><img
+      class="cover-img"
+      src="{{ index (.Params.images) 0 }}"
+      alt="{{ .Title }}"
+    />
+  </a>
   <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}"
     >{{ .Title }}</a
   >
