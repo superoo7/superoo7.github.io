@@ -9,6 +9,7 @@ tags = ["chasm", "decentralized ai"]
 categories = []
 externalLink = ""
 series = []
+images = ["/images/chasm-scout/cover.png"]
 +++
 
 In this guide, I will walk you through the process of running Chasm Scout in Season 0 using Digital Ocean. Please note that you should always refer to the [Official Guide from Chasm Network](https://network-docs.chasm.net/)  for the most up-to-date information.

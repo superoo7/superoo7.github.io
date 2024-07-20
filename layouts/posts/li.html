@@ -1,0 +1,15 @@
+<li class="post-item">
+  <img src="{{ index (.Params.images) 0 }}" />
+  <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}"
+    >{{ .Title }}</a
+  >
+  <span class="date"
+    >Posted on {{ .Date | time.Format (.Site.Params.dateFormat | default
+    "January 2, 2006" ) }}</span
+  >
+
+  <a class="summary" href="{{ .Params.externalLink | default .RelPermalink }}">
+    <!-- Limit to 30 words, end with ... -->
+    {{ .Summary | safeHTML | truncate 300 "..." }}
+  </a>
+</li>
