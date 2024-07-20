@@ -4,21 +4,24 @@ date = 2024-07-20T15:59:18+08:00
 title = "Run Chasm Node with Home PC"
 description = ""
 slug = ""
-authors = []
-tags = []
+authors = ["Johnson Lai"]
+tags = ["chasm", "decentralized ai"]
 categories = []
 externalLink = ""
 series = []
 images = ["/images/home-pc/cover.png"]
 +++
 
-Chasm nodes are lightweight and can run on devices with as little as 2GB of RAM, including a Raspberry Pi. This guide is intended for those who want to try running a node for fun and to understand the Chasm Network better. 
+Chasm nodes are lightweight and can run on devices with as little as 2GB of RAM, including a Raspberry Pi. This guide is intended for those who want to try running a scout node for fun and to understand the Chasm Network better. 
+
+> Important Note: For optimal security, low latency, and better performance, we strongly recommend [using a Virtual Private Server (VPS)](https://superoo7.com/posts/chasm-network-scout-hosting/) instead of a home PC to run your Chasm node. This guide is primarily for educational purposes and for those who want to experiment with running a node at home.
+
 
 This guide has been tested on Mac and Linux Ubuntu. Windows user might need to run this on [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) or [Git Bash](https://git-scm.com/downloads).
 
 **Disclaimer: This guide is provided for informational purposes only. Use it at your own risk.**
 
-> The author and publisher are not responsible for any errors, omissions, or damages resulting from the use of this information. Users should have a thorough understanding of network security and the potential risks involved. For optimal performance and security, please consider using a VPS (Virtual Private Server).
+> The author and publisher are not responsible for any errors, omissions, or damages resulting from the use of this information. Users should have a thorough understanding of network security and the potential risks involved. 
 
 
 ## Prerequisite
@@ -33,14 +36,11 @@ There are two main methods to make your home PC accessible from the internet:
 
 ### Method 1: Port Forwarding (Not Recommended)
 
-Port forwarding opens your local computer network to the public internet. This method can be risky if not properly configured.
+[Port forwarding](https://en.wikipedia.org/wiki/Port_forwarding) opens your local computer network to the public internet. This method can be risky if not properly configured.
 
 Here's a quick guide on [how to open ports on router](https://nordvpn.com/blog/open-ports-on-router/).
 
-If you choose this method, after obtaining your public IP, follow the guide in Chasm Network Scout Season 0 Hosting Tutorial from Step 5 onwards.
-
-Once you obtain your public IP, You can follow the guide in [Chasm Network Scout Season 0 Hosting Tutorial](https://superoo7.com/posts/chasm-network-scout-hosting/) on Step 5 onwards.
-
+If you choose this method, after obtaining your public IP, follow the guide in [Chasm Network Scout Season 0 Hosting Tutorial](https://superoo7.com/posts/chasm-network-scout-hosting/) from Step 5 onwards.
 
 ### Method 2: Tunneling (Recommended)
 
@@ -90,8 +90,6 @@ Follow [Chasm Network Scout Season 0 Hosting Tutorial](https://superoo7.com/post
 
 Open your web browser and visit your webhook URL (e.g., `https://xxxx-xxx-xxx-xx-xxx.ngrok-free.app/`). You should see the server respond with "OK".
 
-![](/images/home-pc/ngrok-browser.jpeg)
+![Browser](/images/home-pc/ngrok-browser.jpeg)
 
-
-
-Congratulations! You've successfully set up your Chasm node at home.
+Congratulations! You've successfully set up your Chasm Scout node at home.
