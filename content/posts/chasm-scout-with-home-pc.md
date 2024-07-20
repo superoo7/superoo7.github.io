@@ -84,7 +84,7 @@ _Note: There's no need to include a port in the WEBHOOK_URL as ngrok handles thi
 
 ### 4. Run the build
 
-Follow [Chasm Network Scout Season 0 Hosting Tutorial](https://superoo7.com/posts/chasm-network-scout-hosting/) from Step 5 onwards in the Chasm Network Scout Season 0 Hosting Tutorial, but replace the `WEBHOOK_URL` with the one you obtained from ngrok.
+Follow [Chasm Network Scout Season 0 Hosting Tutorial](https://superoo7.com/posts/chasm-network-scout-hosting/) from Step 5 onwards, but replace the `WEBHOOK_URL` with the one you obtained from ngrok.
 
 ### 5. Verify your build
 
