@@ -59,32 +59,50 @@ This guide will use **ngrok** as it's the easiest to install and get started wit
 
 ## Step by Step guide
 
-### 1. Sign Up Ngrok account
+### 1. Installing Ngrok
 
-Visit https://ngrok.com and create an account.
+1.	Go to https://ngrok.com and sign up with your email address.
+2.	Download the application based on your OS from ngrok download https://ngrok.com/download.
+3.	Follow the tutorial on the ngrok website to activate the app via your `AUTH KEY`.
 
-### 2. Installation
+Read more about installation guide at https://dashboard.ngrok.com/get-started/setup
 
-Follow the installation guide at https://dashboard.ngrok.com/get-started/setup
+### 2. Get a Redirected URL from NGROK
 
-### 3. Setup tunneling
-
-Open your terminal and run the following command:
-
+1.	Use the command below to run ngrok inside a screen:
 ```sh
-ngrok http http://localhost:3001
+screen ngrok http 3001
 ```
+
+2.	After opening ngrok inside your device, you will see a URL that points to 127.0.0.1:3001. The URL format will be something like https://xxxx-xxx-xx-xxx-xxx.ngrok-free.app/.
+_Note: There's no need to include a port in the WEBHOOK_URL as ngrok handles this for you._
 
 ![ngrok terminal](/images/home-pc/ngrok-terminal.png)
 
-Take note of your `WEBHOOK_URL`, which will look like https://xxxx-xxx-xxx-xx-xxx.ngrok-free.app/
+> Attention: If you close the ngrok process by pressing CTRL+C, the address will stop working. To solve this issue, we opened ngrok inside a screen. After you get the address, press CTRL+A+D to detach from the screen and let it keep working in the background. You can test the ngrok address by opening it in your browser and clicking on visit site. If you get “OK!”, then the address is working properly.
 
-_Note: There's no need to include a port in the WEBHOOK_URL as ngrok handles this for you._
+### 3. Edit Your .env Configuration
+1.	Copy the URL you get from NGROK. Should be something like `https://xxxx-xxx-xx-xxx-xxx.ngrok-free.app/`
+2.	Use the command below to open your .env config:
+```sh
+nano .env
+```
+3.	Paste your new address in the webhook URL. For example:
+```sh
+WEBHOOK_URL=https://xxxx-xxx-xx-xxx-xxx.ngrok-free.app/
+```
+
+### 4. Start docker
 
 
-### 4. Run the build
+```sh
+# Optional to allow firewall for port 3001
+ufw allow 3001
 
-Follow [Chasm Network Scout Season 0 Hosting Tutorial](https://superoo7.com/posts/chasm-network-scout-hosting/) from Step 5 onwards, but replace the `WEBHOOK_URL` with the one you obtained from ngrok.
+# Run Docker
+docker pull chasmtech/chasm-scout
+docker run -d --restart=always --env-file ./.env -p 3001:3001 --name scout chasmtech/chasm-scout
+```
 
 ### 5. Verify your build
 
@@ -92,4 +110,11 @@ Open your web browser and visit your webhook URL (e.g., `https://xxxx-xxx-xxx-xx
 
 ![Browser](/images/home-pc/ngrok-browser.jpeg)
 
+
+## Next Steps
+
 Congratulations! You've successfully set up your Chasm Scout node at home.
+
+1.	Monitor Your Scout: Regularly check https://scout.chasm.net to ensure your Scout is running smoothly and processing requests.
+2.	Stay Updated: Keep an eye on the official Chasm documentation for any updates or changes to the Scout requirements or configuration.
+3.	Optimize Performance: Check out the optimization guide to optimize your server setup for better performance.

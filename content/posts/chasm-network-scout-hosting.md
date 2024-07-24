@@ -40,7 +40,7 @@ Sign up for an account at [Groq](https://console.groq.com/keys) to get `GROQ_API
 
 ## Step 3: Digital Ocean
 
-Sign up for an account on [DigitalOcean](https://www.digitalocean.com/)
+Sign up for an account on [DigitalOcean](https://m.do.co/c/6b801669b201)
 
 ![Digital Ocean](/images/chasm-scout/digitalocean.png)
 
