@@ -54,6 +54,8 @@ Self-taught engineer and [UWA](https://www.uwa.edu.au/) alum, currently Cofounde
 - Utopian Hackathon 2018: [Steem Web Wallet](https://swallet.netlify.app/)
 
 ## Dashboard
+### Dune Dashboard
+- [Chasm Season0 Scout](https://dune.com/superoo7/chasm-scout-season0)
 - [Chasm SBT](https://dune.com/superoo7/chasm-sbt-launch)
 - [$DONUT](https://dune.com/superoo7/dollardonut)
 - [deAIjoker NFT](https://dune.com/superoo7/deaijoker)
