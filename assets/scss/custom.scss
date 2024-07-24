@@ -14,6 +14,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+body.colorscheme-dark {
+  .cover-img {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+}
+
 .post-list {
   display: flex;
   flex-direction: column;
