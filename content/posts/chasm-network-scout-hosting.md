@@ -104,6 +104,7 @@ pwd
 Create a new `.env` file via [Nano](https://www.howtogeek.com/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/)
 
 ```sh
+mkdir ChasmNode && cd ChasmNode
 nano .env
 ```
 
