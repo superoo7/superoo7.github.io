@@ -40,7 +40,7 @@ Chromia suits this project because:
 - Efficient Data Handling: Chromia ensures that once data is written, reading it is free and unlimited.
 - Developer-Friendly Tools: Simplifies development with tools like [Postchain client](https://www.npmjs.com/package/postchain-client)
 
-We're using Node.js and Johnny-Five.js to streamline development by coding everything in JavaScript.
+We're using Node.js and Johnny-Five.js to streamline development by coding everything in Typescript/JavaScript.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ We're using Node.js and Johnny-Five.js to streamline development by coding every
 - 10k Ohm Resistor
 - Jumper wires
 - Breadboard
-- Arduino UNO R4 Wifi (or any Johnny-Five supported board)
+- Arduino UNO R4 Wifi (or [any board that Johnny-Five supported](https://johnny-five.io/platform-support/))
 
 ### Software
 - Node.js and NPM
@@ -58,8 +58,8 @@ We're using Node.js and Johnny-Five.js to streamline development by coding every
 - Chromia CLI
 
 ### Setup
-1. Use Arduino IDE to upload Firmata to Arduino
-2. Install Chromia CLI
+1. [Use Arduino IDE to upload Firmata to Arduino](https://johnny-five.io/platform-support/)
+2. Install [Chromia CLI](https://docs.chromia.com/getting-started/dev-setup/cli-installation)
 
 ## Step-by-Step Guide
 
