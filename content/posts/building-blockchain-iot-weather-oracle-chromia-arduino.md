@@ -12,8 +12,6 @@ series = []
 images = ["/images/iot-weather/cover.png"]
 +++
 
-# Step-by-Step Guide: Building a Blockchain-Based IoT Weather Oracle on Chromia with Arduino
-
 ## Introduction
 
 Integrating IoT with blockchain technology enhances data security, transparency, and reliability—crucial for IoT applications. Blockchain’s tamper-proof ledger and ability to timestamp data make it ideal for securely managing IoT information.
