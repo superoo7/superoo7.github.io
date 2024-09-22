@@ -75,7 +75,7 @@ b. Edit `src/main.rell`: https://github.com/superoo7/chromia-iot-demo/blob/main/
 
 Let me explain the code
 
-```rell
+```js
 module;
 
 entity temperature {
@@ -90,7 +90,7 @@ This code defines a `temperature` entity in the Chromia blockchain. It has three
 - `temperature`: Stores the temperature reading
 - `created_at`: Automatically stores the timestamp of when the data was added to the blockchain
 
-```rell
+```js
 operation add_temperature(temperature: decimal) {
     val addr = op_context.get_signers()[0];
     create temperature (
@@ -105,7 +105,7 @@ This operation allows adding new temperature readings to the blockchain:
 - `op_context.get_signers()[0]` gets the address of the account sending the transaction
 - `create temperature (...)` creates a new temperature entry in the blockchain
 
-```rell
+```js
 query get_temperatures(addr: byte_array) {
     return temperature @* {
         .address == addr
