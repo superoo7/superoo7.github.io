@@ -83,6 +83,7 @@ The limitations of traditional image processing led me to explore machine learni
 Using Roboflow, the process involved:
 
 1. Recording gameplay and manually labeling 127 screenshots
+![Label](/images/telegram-game-automation/label.png)
 2. Creating three classes: "left" branch, "right" branch, and "restart" button
 3. Training a custom object detection model
 4. Rebuilding in Python with:
