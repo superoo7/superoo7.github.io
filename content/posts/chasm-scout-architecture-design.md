@@ -9,7 +9,7 @@ tags = ["chasm", "decentralized ai"]
 categories = []
 externalLink = ""
 series = []
-images = ["/images/scout-design/cover.png"]
+images = ["/images/scout-design/cover.jpg"]
 +++
 
 At Chasm, we believe the future of deAI is open-source.
