@@ -16,8 +16,6 @@ images = ["/images/telegram-game-automation/cover.jpeg"]
 
 A few months ago, I stumbled upon the Telegram game Lumberjack, which seemed like an ideal project for testing automation using simple pixel matching mechanics. Its straightforward mechanics made it an appealing target for experimenting with different automation approaches.
 
-
-
 ## The Game: Lumberjack
 
 ![Lumberjack](/images/telegram-game-automation/lumberjack.jpg)
@@ -112,3 +110,5 @@ The journey from PyAutoGui to machine learning reveals a deeper truth about auto
 > Action cures fear - David J. Schwartz
 
 This project taught me that sometimes, the most daunting solution - in this case, machine learning - can actually be the most elegant. The final implementation wasn't just more accurate; it was simpler, more maintainable, and more adaptable to future changes.
+
+The final code for this project is available on [GitHub](https://github.com/superoo7/telegram-lumberjack-automation).
