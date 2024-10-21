@@ -1,8 +1,8 @@
 +++ 
 draft = false
 date = 2024-10-21T10:21:52+08:00
-title = "Chasm x Chromia"
-description = "Learn how to build a blockchain-based IoT weather oracle using an Arduino UNO, thermistor sensor, and Johnny-Five.js. This step-by-step guide demonstrates how to collect temperature data with Node.js and store it securely on the Chromia blockchain—a Layer-1 relational blockchain platform ideal for IoT applications. Discover why Chromia’s SQL-based architecture and customizable fee structures make it perfect for rapid prototyping and seamless IoT integration. Perfect for developers interested in the intersection of IoT, blockchain technology, and JavaScript development."
+title = "Chasm x Chromia: Paving the Way for Decentralized AI"
+description = "Chasm Network partners with Chromia to enhance AI transparency and fairness using blockchain technology. By open-sourcing their code and decentralizing AI data, they aim to make AI decision-making processes more understandable and reliable for everyone."
 slug = "chasm-chromia"
 authors = ["johnson lai"]
 tags = ["chromia", "decentralized ai"]
