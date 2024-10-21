@@ -38,9 +38,9 @@ This is where Chromia comes in. Chromia isn’t just any blockchain – it’s a
 
 With Chromia, we can store AI inference data on the blockchain, ensuring that:
 
-The data is transparent: anyone can see it
-It's tamper-proof: no one can change it secretly
-It's decentralized: not controlled by any single entity
+- The data is transparent: anyone can see it
+- It's tamper-proof: no one can change it secretly
+- It's decentralized: not controlled by any single entity
 
 This deployment is a big deal. It means we're not just saying our AI is fair and transparent - we're proving it by making the actual data open and verifiable. By storing opML inference data on Chromia's decentralized platform, we're creating a traceable record of our AI's decision-making process.
 
