@@ -157,12 +157,18 @@ We’re just getting started, but look what’s already here:
 - $LUNA: Creating AI agent on-chain
 - $GMIKA: Personal AI companions
 - $CAI: Running decentralized AI networks via opML
+- $AI16Z: DAO for AI Fund
 
 # Conclusion
 {{< figure src="/images/transparency-in-ai-agent/crypto-ai-promises.png" caption="https://vitalik.eth.limo/general/2024/01/30/cryptoai.html" >}}
 
 We’re at the start of something big. While Vitalik’s article perfectly captures how crypto and AI can work together, who would have thought the convergence would start with AI memecoins called $GOAT? This unexpected beginning shows just how unpredictable and exciting the future of Crypto x AI could be.
 
-Want to make your AI agent transparent? I’ve built a solution that needs just 4 lines of code for any LLM project:
+{{< figure src="/images/transparency-in-ai-agent/explorer.jpeg" caption="Live Demo of Explorer: https://chr-llm-demo.surge.sh/address/03ee16e285050088557df422d0cf55736c4c355999e64d2d3547cfb581cdc3136b" >}}
+
+Want to make your AI agent transparent? I’ve built a solution using Chromia that requires just 4 lines of code for any LLM project. Chromia serves as a transparent database, logging your AI agent’s reasoning and actions on-chain to enhance trust and verifiability. You can watch it live tweeting at @alphaonchain.
+
+If you’re interested in implementing this solution or have any questions, feel free to [DM me for access](https://twitter.com/jlwhoo7) or more information.
+
 - Watch it live tweeting at https://x.com/alphaonchain
 - Get the code: https://github.com/superoo7/chromia-as-a-transparent-ai-database
