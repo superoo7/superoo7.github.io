@@ -20,6 +20,8 @@ The article [Setting Your Pet Rock Free](https://nousresearch.com/setting-your-p
 
 Nous Research has been quite active in Crypto x AI space, they use to [run a subnet on bittensor $TAO](https://bittensor.org/bittensor-and-nous-research/).
 
+> **This is the first provably secure AI agent that prevents anyone from accessing the Twitter account after 7 days, using TEE.**
+
 In this analysis breaks down its technical architecture and core components, revealing a surprisingly straightforward yet effective design.
 
 ## Simple explanation of TEE
