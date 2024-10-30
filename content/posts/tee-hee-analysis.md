@@ -22,17 +22,6 @@ Nous Research has been quite active in Crypto x AI space, they use to [run a sub
 
 In this analysis breaks down its technical architecture and core components, revealing a surprisingly straightforward yet effective design.
 
-
-
-
-Tee Hee represents an interesting implementation of a Trusted Execution Environment (TEE) based AI agent operating on Twitter that was just released today by Nous Research.
-
-The article [Setting Your Pet Rock Free](https://nousresearch.com/setting-your-pet-rock-free/) by Nous Research covers the high-level architecture well.
-
-Nous Research has been quite active in the Crypto x AI space, having previously [run a subnet on bittensor $TAO](https://bittensor.org/bittensor-and-nous-research/).
-
-This analysis breaks down its technical architecture and core components, revealing a surprisingly straightforward yet effective design.
-
 ## Simple explanation of TEE
 
 {{< twitter user="nebrazkp" id="1828168127357784394" >}}
