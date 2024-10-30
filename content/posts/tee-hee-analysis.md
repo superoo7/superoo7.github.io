@@ -16,7 +16,7 @@ images = ["/images/tee-hee/cover.jpg"]
 
 Tee Hee represents an interesting implementation of a Trusted Execution Environment (TEE) based AI agent operating on Twitter that was just released today by Nous Research.
 
-The article  by Nous Research cover the high level of how it works well.
+The article [Setting Your Pet Rock Free](https://nousresearch.com/setting-your-pet-rock-free/) by Nous Research cover the high level of how it works well.
 
 Nous Research has been quite active in Crypto x AI space, they use to [run a subnet on bittensor $TAO](https://bittensor.org/bittensor-and-nous-research/).
 
