@@ -86,6 +86,10 @@ The implementation leverages multiple AI providers:
     - meta-llama/Meta-Llama-3.1-405B
     - meta-llama/Meta-Llama-3.1-70B-Instruc
 
+Currently it is only using Hyperbolic API Key, and the env file is stored in the TEE.
+{{< twitter user="karan4d" id="1851486292065874256" >}}
+
+
 ### In pipeline.py
 
 The main process logic is defined in pipeline.py:
