@@ -1,28 +1,28 @@
-+++ 
++++
 draft = false
 date = 2024-10-30T10:21:52+08:00
-title = "Technical Analysis of Tee Hee: A TEE-based Autonomous AI Agent"
-description = "Deep dive into Tee Hee's architecture: how it combines TEE, Python, and Rust to create verifiably autonomous AI agents. Analysis of Nous Research's innovative approach."
-slug = "tee-hee"
-authors = ["johnson lai"]
-tags = ["decentralized ai", "ai agent"]
+title = “Technical Analysis of Tee Hee: A TEE-Based Autonomous AI Agent”
+description = “Deep dive into Tee Hee’s architecture: how it combines TEE, Python, and Rust to create verifiably autonomous AI agents. Analysis of Nous Research’s innovative approach.”
+slug = “tee-hee”
+authors = [“Johnson Lai”]
+tags = [“decentralized ai”, “ai agent”]
 categories = []
-externalLink = ""
+externalLink = “”
 series = []
-images = ["/images/tee-hee/cover.jpg"]
+images = [”/images/tee-hee/cover.jpg”]
 +++
 
 # Introduction
 
-Tee Hee represents an interesting implementation of a Trusted Execution Environment (TEE) based AI agent operating on Twitter that was just released today by Nous Research.
+Tee Hee represents an intriguing implementation of a Trusted Execution Environment (TEE)-based AI agent operating on Twitter, which was just released today by Nous Research.
 
-> **This is the first provably secure AI agent that prevents anyone from accessing the Twitter account after 7 days, of using TEE.**
+> **This is the first provably secure AI agent that prevents anyone from accessing the Twitter account after 7 days by using a TEE.**
 
-The article [Setting Your Pet Rock Free](https://nousresearch.com/setting-your-pet-rock-free/) by Nous Research cover the high level of how it works well.
+The article [Setting Your Pet Rock Free](https://nousresearch.com/setting-your-pet-rock-free/) by Nous Research covers how it works at a high level.
 
 Nous Research has been quite active in Crypto x AI space, they used to [run a subnet on bittensor $TAO](https://bittensor.org/bittensor-and-nous-research/).
 
-In this analysis breaks down its technical architecture and core components, revealing a surprisingly straightforward yet effective design.
+This analysis breaks down its technical architecture and core components, revealing a surprisingly straightforward yet effective design.
 
 The analysis is based on this particular branch:
 - https://github.com/tee-he-he/err_err_ttyl/tree/7f408642a0779c45eefbc434c985ea479be4ae2a
@@ -33,15 +33,43 @@ The analysis is based on this particular branch:
 {{< twitter user="nebrazkp" id="1828168127357784394" >}}
 
 
+# Interesting Findings
+
+1. NLP Pipeline Approach
+
+One of the key observations is that the Tee Hee AI Agent operates more like an NLP pipeline—comprising data ingestion, preprocessing, feature extraction (embeddings), model inference (content generation), and action based on model outputs—rather than following typical AI agent workflows like ReAct or Plan-and-Execute. This makes sense because ReAct agents with access to tools are more complex and less consistent to implement.
+
+2. Logical Flows Instead of Tools
+
+The agent doesn’t actually use tools; instead, what might be considered “tools” are simply logical flows that execute specific actions.
+
+3. Efficient Prompting Strategy
+
+The way the prompting works is particularly interesting. The agent passes in the entire dataset and reiterates it, allowing the LLM to spend less time extracting data. Some NLP work is done via regex to assist in this process. 
+
+By providing both the raw data and the extracted relevant information, the AI agent can make more informed decisions efficiently.
+
+4. Hidden Prompts
+
+There is a hidden prompt (from the .env file); the developer hides one of the important prompts used for Twitter generation. This makes sense because otherwise, anyone could game the system to manipulate the AI into tweeting specific content.
+
+5. Impacting the AI’s “Brain”
+
+To make an impression on the AI “brain,” you need to create a standout (“banger”) tweet that it can’t ignore amid all the noise (its long-term memory, short-term memory, recent tweets, recent notifications). The tweet needs to pass through several data points; in theory, the more you interact with the bot, the more likely it is that the bot will remember you and start capturing your data.
+
+6. The Agent Is More Like a Bot
+
+Unlike $GOAT, the bot doesn’t have consciousness or the ability to let agents talk to each other and do things freely at it's own will; it’s more about following predefined rulesets / NLP pipeline.
+
 # Core Architecture
 
-On a high level this is how the agent works:
+At a high level, this is how the agent works:
 
 {{< figure src="/images/tee-hee/agentloop.png" caption="Tee-Hee Agent Flow" >}}
 
-The current Tee-Hee AI agent architectures comprise two main components, all controlled by human developers:
-- Public Data (such as RAG databases and foundation models) 
-- Private Data (including Twitter accounts and email accounts) 
+The current Tee Hee AI agent architecture comprises two main components, both controlled by human developers:
+- Public Data: Such as Retrieval-Augmented Generation (RAG) databases and foundation models
+- Private Data: Including Twitter accounts and email accounts
 
 The proposed approach secures both components within a Trusted Execution Environment, ensuring they are tamper-proof and enabling AIs to autonomously manage and protect their digital assets without human interference.
 
@@ -102,7 +130,7 @@ The implementation leverages multiple AI providers:
 - OpenRouter 
 - Hyperbolic labs
     - meta-llama/Meta-Llama-3.1-405B
-    - meta-llama/Meta-Llama-3.1-70B-Instruc
+    - meta-llama/Meta-Llama-3.1-70B-Instruct
 
 Currently, it is only using Hyperbolic API Key, and the env file is stored in the TEE.
 {{< twitter user="karan4d" id="1851486292065874256" >}}
@@ -383,14 +411,15 @@ flowchart TD
 ```
 
 ## Step 8: Store the new post in long-term memory if significant enough
-The agent will only save the memory if it is significant enough (>=7), which means the memory needs to be at least _"Important event with potential long-term impact (omg my life will never be the same)"_.
+The agent will only save the memory if it is significant enough (≥7), which means the memory needs to be at least _“Important event with potential long-term impact (omg my life will never be the same)”_.
 
 ##  Step 9: Save the new post to the database
-Save the post onto database.
+Save the post to the database.
 
-The bot will only tweet if the tweet quality is >=3, which is _"Mildly interesting or slightly unusual event (eh, cool)"_
+The bot will only tweet if the tweet quality is ≥3, which is _“Mildly interesting or slightly unusual event (eh, cool)”_
+
 
 # Conclusion
 
-This appears to be one of the first practical implementations I've seen that interestingly combines TEEs with AI Agents. Instead of using blockchain, Nous Research used hardware-based security (TEEs) to help prove their AI agent is autonomous. Their approach is quite practical - they used simple but effective engineering patterns, mixed different technologies (Python, Rust), and relied on hardware security that's already widely available. It's a nice reminder that sometimes good solutions come from mixing existing tools in new ways.
+This appears to be one of the first practical implementations I’ve seen that interestingly combines TEEs with AI agents. Instead of using blockchain, Nous Research used hardware-based security (TEEs) to help prove their AI agent is autonomous. Their approach is quite practical—they used simple but effective engineering patterns, mixed different technologies (Python, Rust), and relied on hardware security that’s already widely available. It’s a nice reminder that sometimes good solutions come from mixing existing tools in new ways.
 
