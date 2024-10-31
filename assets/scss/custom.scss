@@ -54,3 +54,13 @@ body.colorscheme-dark {
     }
   }
 }
+
+
+pre.mermaid svg {
+  max-width: none !important;
+  height: auto !important;
+}
+
+pre.mermaid svg p {
+  font-size: 8px !important;
+}
