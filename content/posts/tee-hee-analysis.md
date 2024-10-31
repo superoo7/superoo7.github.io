@@ -270,7 +270,7 @@ https://github.com/DamascusGit/nousflash/blob/main/agent/engines/significance_sc
 
 ```mermaid
 flowchart TD
-    A["memory (new twitter post)"] -> B
+    A["memory (new twitter post)"] --> B
     B["System:     On a scale of 1-10, rate the significance of the following memory:
 
     {memory}
