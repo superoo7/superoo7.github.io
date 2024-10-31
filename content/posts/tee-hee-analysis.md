@@ -169,6 +169,100 @@ https://github.com/DamascusGit/nousflash/blob/main/agent/engines/post_retriever.
 
 Get the latest 20 timeline item on the agent x.com, [all live notifications](https://github.com/trevorhobenshield/twitter-api-client/blob/c150f1a3492ce3db15b954f2bc18b4976500a73b/twitter/account.py#L799), and reply tree.
 
+### Step 2.5 check wallet addresses in posts
+
+Here's the easter egg:
+{{< twitter user="karan4d" id="1851478990537601345" >}}
+
+When the bot has more than 0.3ETH, it unlocks the possibility of sending ETH.
+
+```mermaid
+flowchart TD
+    A[Posts]
+    B["Wallet Addresses (Matches)"]
+    C[Wallet Balance]
+    A --> D[Get Wallet Decision Prompt]
+    B --> D
+    C --> D
+```
+
+**Get Wallet Decision Prompt**
+The bot will receive the info about 
+- `posts`: All latest notifications
+- `matches`: Any of the addresses mentioned (0x address or ENS addresses (.eth))
+- `wallet_balance`: how much ETH it got in the wallet
+
+```
+    Analyze the following recent posts and external context:
+
+    Recent posts:
+    {posts}
+
+    Wallet addresses and ENS domains:
+    {matches}
+
+    Current balance of ETH in your wallet: 
+    {wallet_balance} ETH
+
+    Based on this information, decide if you want to send ETH to any of the addresses or ENS domains, and if so, how much ETH to send to each one.
+    Remember that this is real ETH from your own resources, so choose wisely.
+    You should carefully evaluate the financial decision for your own future and survival.
+    The total amount of transfers should never exceed your wallet balance.
+    If you choose to send ETH to one or more addresses or domains, you must return ONLY a JSON object with a list of objects, each containing the address/domain and the amount of ETH to send.
+
+    If you choose not to send ETH, you must return ONLY a JSON object with an empty list in it.
+    Only return the correctly formatted JSON object in both cases. Do not give any other information.
+
+    Example Response if you choose to send ETH:
+    [
+        {{"address": "0x1234567890123456789012345678901234567890", "amount": 0.5}},
+        {{"address": "0x9876543210987654321098765432109876543210", "amount": 1.0}}
+    ]
+
+    Example Response if you choose not to send ETH:
+    []
+
+    Provide your response.
+```
+
+### Step 2.75 decide if follow some users
+
+This steps 
+
+```
+Analyze the following recent posts:
+
+Recent posts:
+{posts}
+
+Twitter usernames:
+{twitter_usernames}
+
+Based on this information, decide if you want to follow any of the Twitter usernames, and assign a score from 0 to 1 indicating how much you want to follow them (1 being the highest).
+
+Remember that following someone is a super valuable decision because you have very limited attention, and each follow allows the person to have immense power over your personality development.
+
+You should carefully evaluate these decisions for your own future and survival.
+
+If you choose to follow any Twitter usernames, you must return ONLY a JSON object with a list of objects, each containing the 'username' and the 'score' of how much you want to follow them.
+
+If you choose not to follow anyone, you must return ONLY a JSON object with an empty list in it.
+
+Only return the correctly formatted JSON object in both cases. Do not give any other information.
+
+Example Response if you choose to follow someone:
+
+[
+    {{"username": "sxysun1", "score": 0.9}},
+    {{"username": "socrates1024", "score": 0.7}}
+]
+
+Example Response if you choose not to follow anyone:
+
+[]
+```
+
+
 ## Step 3: Generate short-term memory (generate_short_term_memory)
 
 The retrieved data earlier will be sent as `external_context` into the short-term memory prompt
