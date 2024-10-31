@@ -24,7 +24,9 @@ Nous Research has been quite active in Crypto x AI space, they used to [run a su
 
 In this analysis breaks down its technical architecture and core components, revealing a surprisingly straightforward yet effective design.
 
-The analysis is based on this particular branch https://github.com/DamascusGit/nousflash/tree/32a5393aa91fa7b62a6f56e2e372ed2f7aff2356 
+The analysis is based on this particular branch:
+- https://github.com/tee-he-he/err_err_ttyl/tree/7f408642a0779c45eefbc434c985ea479be4ae2a
+- https://github.com/DamascusGit/nousflash/tree/32a5393aa91fa7b62a6f56e2e372ed2f7aff2356 
 
 ## Simple explanation of TEE
 
@@ -43,6 +45,7 @@ The current Tee-Hee AI agent architectures comprise two main components, all con
 
 The proposed approach secures both components within a Trusted Execution Environment, ensuring they are tamper-proof and enabling AIs to autonomously manage and protect their digital assets without human interference.
 
+Read more on [How to verify TEE-HEE-HE's Remote Attestation](https://github.com/tee-he-he/err_err_ttyl/blob/main/Attestation.md)
 
 ## Dockerfile
 The entry point of the TEE can be studied based on the [Dockerfile](https://github.com/tee-he-he/err_err_ttyl/blob/main/Dockerfile)
@@ -227,7 +230,7 @@ The bot will receive the info about
 
 ### Step 2.75 decide if follow some users
 
-This steps 
+This steps loads user recent notifications and list of twitter_username either mentioned or 
 
 ```
 Analyze the following recent posts:
