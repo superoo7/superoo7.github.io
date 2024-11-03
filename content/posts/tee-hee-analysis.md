@@ -1,15 +1,15 @@
 +++
 draft = false
 date = 2024-10-30T10:21:52+08:00
-title = “Technical Analysis of Tee Hee: A TEE-Based Autonomous AI Agent”
-description = “Deep dive into Tee Hee’s architecture: how it combines TEE, Python, and Rust to create verifiably autonomous AI agents. Analysis of Nous Research’s innovative approach.”
-slug = “tee-hee”
-authors = [“Johnson Lai”]
-tags = [“decentralized ai”, “ai agent”]
+title = "Technical Analysis of Tee Hee: A TEE-Based Autonomous AI Agent"
+description = "Deep dive into Tee Hee’s architecture: how it combines TEE, Python, and Rust to create verifiably autonomous AI agents. Analysis of Nous Research’s innovative approach."
+slug = "tee-hee"
+authors = ["Johnson Lai"]
+tags = ["decentralized ai", "ai agent"]
 categories = []
-externalLink = “”
+externalLink = ""
 series = []
-images = [”/images/tee-hee/cover.jpg”]
+images = ["/images/tee-hee/cover.jpg"]
 +++
 
 # Introduction
@@ -59,7 +59,7 @@ To make an impression on the AI “brain,” you need to create a standout (“b
 
 6. The Agent Is More Like a Bot
 
-Unlike $GOAT, the bot doesn’t have consciousness or the ability to let agents talk to each other and do things freely at it's own will; it’s more about following predefined rulesets / NLP pipeline.
+Unlike truth terminal, the bot doesn’t have consciousness or the ability to do things freely at it's own will; it’s more about following predefined rulesets / NLP pipeline.
 
 # Core Architecture
 
