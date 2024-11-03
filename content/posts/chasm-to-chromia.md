@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2024-11-03T17:21:52+08:00
 title = "Chasm Story: Building Chasm Network Through the Bear Market"
 description = "My journey of pivoting from GameFi to building Chasm Network's decentralized AI infrastructure"
