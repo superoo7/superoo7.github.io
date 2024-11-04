@@ -6,11 +6,12 @@ draft = false
 
 {{< figure src="/images/joker.jpg" caption="Johnson Lai" >}}
 
-Self-taught engineer and [UWA](https://www.uwa.edu.au/) alum, currently Cofounder/CTO at Chasm Network (decentralized AI). Former COO/CTO at Hooga Gaming and R&D & mobile engineer at CoinGecko. Passionate about blockchain, AI, and building product.
+Self-taught engineer and [UWA](https://www.uwa.edu.au/) alum, currently Head of Data & AI at Chromia. Former CTO at Chasm Network & COO/CTO at Hooga Gaming and R&D & mobile engineer at CoinGecko. Passionate about blockchain, AI, and building product.
 
 # Previous experience
-
-- **11/2023 - Now** [Chasm Network](https://chasm.network)
+- **10/2024** - Now Chromia
+  - Head of Data & AI
+- **11/2023 - 15/10/2024** [Chasm Network](https://chasm.network)
   - Cofounder & CTO
 - **06/2021 - 11/2023** [Hooga Gaming](https://hooga.gg)
   - COO
