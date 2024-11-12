@@ -16,6 +16,9 @@ I left CoinGecko to start my own ventures into founding Hooga Gaming, which late
 
 {{< twitter user="jlwhoo7" id="1494437712354426896" >}}
 
+New Chapter: From Chasm to Chromia
+{{< twitter user="jlwhoo7" id="1853358395509907614" >}}
+
 I want to take this opportunity to share what we've built as Chasm. 
 
 Chasm Network emerged during challenging market conditions, and those familiar with my work know my commitment to building and iterating. These 3.5 years represent multiple iterations and valuable learning experiences. I'm grateful for everyone who has been part of this journey and would like to share what we've built.

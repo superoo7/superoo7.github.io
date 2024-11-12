@@ -147,7 +147,7 @@ The final evolution envisions autonomous AI agents operating within their own tr
 
 This transparency becomes crucial as AI grows more powerful and autonomous, enabling us to understand and verify their behavior at every level.
 
-The market’s still figuring this part out, honestly.
+The market’s still figuring this part out, honestly. We've seen TEE being used here. https://superoo7.com/posts/tee-hee/
 
 # What's Already Happening
 
