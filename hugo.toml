@@ -19,6 +19,7 @@ style = "github-dark"
   description = "Johnson · Crypto x AI"
   keywords = "blog,developer,personal"
   avatarurl = "images/joker.jpg"
+  info_details = "Head of Data & AI @ Chromia\n\nAdvisor @ ChasmNetwork\n\nPrev: CoinGecko"
   #gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
@@ -34,8 +35,8 @@ style = "github-dark"
   hidecolorschemetoggle = false
 
   # customCss = ["css/custom.css"]
-  customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+  customSCSS = ["scss/custom.scss", "scss/homepage.scss"]
+  customJS = ["js/custom.js"]
 
 [taxonomies]
   category = "categories"
