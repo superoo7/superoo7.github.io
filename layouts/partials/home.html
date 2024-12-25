@@ -1,22 +1,14 @@
-{{ define "head" }}
-  {{ if hugo.IsServer }}
-    {{ $cssOpts := (dict "enableSourceMap" true ) }}
-    {{ $homepage := resources.Get "scss/homepage.scss" | toCSS $cssOpts }}
-    <link rel="stylesheet" href="{{ $homepage.RelPermalink }}" media="screen">
-  {{ else }}
-    {{ $homepage := resources.Get "scss/homepage.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $homepage.RelPermalink }}" integrity="{{ $homepage.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-  {{ end }}
-{{ end }}
+{{ $homepage := resources.Get "scss/homepage.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $homepage.RelPermalink }}" integrity="{{ $homepage.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 
 <section class="container centered">
-  <div class="about">
-    <div class="card-face card-front">
-      {{ partialCached "home/avatar.html" . }}
+  <div class="about" role="main">
+    <div class="card-face card-front" aria-label="Profile card front">
+      {{ partialCached "home/avatar.html" $ }}
       {{ partialCached "home/author.html" . }}
       {{ partialCached "home/social.html" . }}
     </div>
-    <div class="card-face card-back">
+    <div class="card-face card-back" aria-label="Profile card back">
       <h1>About Me</h1>
       <h3>{{ .Site.Params.info_details | default "Add more details about yourself in config.toml with the param 'info_details'" | markdownify }}</h3>
       <h3>Click anywhere to flip back!</h3>
