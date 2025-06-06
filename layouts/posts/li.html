@@ -15,7 +15,7 @@
   >
 
   <a class="summary" href="{{ .Params.externalLink | default .RelPermalink }}">
-    <!-- Limit to 30 words, end with ... -->
-    {{ .Summary | safeHTML | truncate 300 "..." }}
+    <!-- {{ .Summary | safeHTML | truncate 200 "..." }} -->
+    {{ .Summary | plainify | truncate 300 "..." }}
   </a>
 </li>

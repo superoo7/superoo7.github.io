@@ -14,10 +14,10 @@ images = ["/images/chasm-to-chromia/cover.jpeg"]
 
 I left CoinGecko to start my own ventures into founding Hooga Gaming, which later pivoted into Chasm Network. After 3.5 years with Hooga Gaming & Chasm Network, I'm transitioning to an advisory role with Chasm Network while joining Chromia as Head of Data & AI. I'll continue supporting the Chasm team as they build upon our established foundation.
 
-{{< twitter user="jlwhoo7" id="1494437712354426896" >}}
+{{< x user="jlwhoo7" id="1494437712354426896" >}}
 
 New Chapter: From Chasm to Chromia
-{{< twitter user="jlwhoo7" id="1853358395509907614" >}}
+{{< x user="jlwhoo7" id="1853358395509907614" >}}
 
 I want to take this opportunity to share what we've built as Chasm. 
 
@@ -25,15 +25,15 @@ Chasm Network emerged during challenging market conditions, and those familiar w
 
 As Brian Armstrong aptly said, "Actions provide information, keep doing stuff." Here's our journey of continuous building and adaptation over the past 3.5 years.
 
-{{< twitter user="StartupArchive_" id="1778752416709783783" >}}
+{{< x user="StartupArchive_" id="1778752416709783783" >}}
 
 
 # GameFi bear market
 
 During the GameFi winter, Hooga Gaming demonstrated adaptability by exploring new directions. We developed competitive gaming and esports initiatives, including a loyalty program using banana tokens for our scholars.
 
-{{< twitter user="HoogaGaming" id="1524268208265519109" >}}
-{{< twitter user="HoogaGaming" id="1534505616256823302" >}}
+{{< x user="HoogaGaming" id="1524268208265519109" >}}
+{{< x user="HoogaGaming" id="1534505616256823302" >}}
 
 # Chasm V1
 
@@ -51,17 +51,17 @@ Key challenges we faced:
 Before developing the Weave Platform, we conducted several AI experiments:
 
 **Thread on Various Pre-Weave Platform Experiments**
-{{< twitter user="jlwhoo7" id="1630957022106750977" >}}
+{{< x user="jlwhoo7" id="1630957022106750977" >}}
 
 **FriendTech Auto reply AI Agent**
-{{< twitter user="HunemNFT" id="1694744578681946142" >}}
-{{< twitter user="jlwhoo7" id="693839376500002923" >}}
+{{< x user="HunemNFT" id="1694744578681946142" >}}
+{{< x user="jlwhoo7" id="693839376500002923" >}}
 
 **PenguMon: an RPG Game Developed with Weave and Chasm Network**
-{{< twitter user="HunemNFT" id="1714295958941348310" >}}
+{{< x user="HunemNFT" id="1714295958941348310" >}}
 
 **Alpha Chat Summarizer**
-{{< twitter user="jlwhoo7" id="1726441147571282217" >}}
+{{< x user="jlwhoo7" id="1726441147571282217" >}}
 
 # Our First Experiment with Crypto x AI: Tatarot / Hunem
 
@@ -71,15 +71,15 @@ We deployed the Tatarot app on Linea Blockchain, based on my thesis of Crypto x 
 - Creativity
 - Ownership
 
-{{< twitter user="jlwhoo7" id="1673928947825020928" >}}
+{{< x user="jlwhoo7" id="1673928947825020928" >}}
 
-{{< twitter user="jlwhoo7" id="1669367157891936256" >}}
+{{< x user="jlwhoo7" id="1669367157891936256" >}}
 
 Here's my talk on Tatarot: 
 {{< youtube id="oyY0OG1IEp0" autoplay="false" start="1556" >}}
 
 **DiggiBot: Bittensor Mining monitor bot**
-{{< twitter user="jlwhoo7" id="1762130523005284682" >}}
+{{< x user="jlwhoo7" id="1762130523005284682" >}}
 
 
 # Chasm Network
@@ -94,7 +94,7 @@ For technical details, read my article on [Chasm Scout Architecture](https://sup
 
 We created a CLI for managing multiple scouts:
 
-{{< twitter user="ChasmNetwork" id="1823381857700077758" >}}
+{{< x user="ChasmNetwork" id="1823381857700077758" >}}
 
 Also running with just 10 steps you are able to setup your own Scout nodes. A lot of first time node runner are able to try out Chasm Scout, contribute to the network and at the same time they got airdrops for helping out.
 
@@ -115,7 +115,7 @@ Watch my explanation of Decentralized AI consensus:
 
 Addressing the cold start problem of Chasm Network, we build Weave Platform. With Weave, we are able to onboard different web2/web3 users to get use to different decentralized AI product for the first time. We've integrated EnqAI, Bittensor Corcel, etc.
 
-{{< twitter user="jlwhoo7" id="1772651598373609940" >}}
+{{< x user="jlwhoo7" id="1772651598373609940" >}}
 
 # Chasm Network GTM
 
