@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2025-06-05T17:59:18+08:00
+date = 2025-06-06T09:59:18+08:00
 title = "XiaoZhi: The Open Source $15 AI Robot OS That's Changing Physical AI"
 description = "Explore XiaoZhi, the viral open source hardware OS making affordable, customizable AI companions a reality. Build your own ESP32-based AI robot with just $15 and join the Physical AI revolution."
 slug = "xiaozhi-open-source-ai-robot-os-guide"
