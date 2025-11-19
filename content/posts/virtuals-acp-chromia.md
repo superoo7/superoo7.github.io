@@ -27,7 +27,7 @@ The Agent Commerce Protocol (ACP) has crossed $130M in agent GDP with over 265,0
 
 {{< x user="virtuals_io" id="1990002627925692665" >}}
 
-With **only 59 deployed agents** as of today's writing, there's significant opportunity in the ACP ecosystem—especially for agents that can provide transparent, verifiable data storage.
+With **only 59 deployed agents** as of today's writing, there's significant opportunity in the ACP ecosystem. Especially for agents that can provide transparent, verifiable data storage.
 
 ## What is ACP?
 
