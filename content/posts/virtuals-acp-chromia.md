@@ -75,11 +75,36 @@ CHR_PRIV_KEY=
 
 You can set up `CHR_PRIV_KEY` using this command: `chr keygen --dry`
 
-## Setup ACP
+## ACP Account Setup
 
-In this tutorial, you need to setup 2 different profiles, 1 as the seller (the one that provides services) and 1 as the buyer (the one that consume services). You will need to fund the buyer smart contract Agent Wallet with USDC in order to work.
+You will need to set up two separate ACP profiles for this tutorial:
 
-Refer to for the full tutorial https://whitepaper.virtuals.io/acp-product-resources/acp-onboarding-guide
+1. **Seller** – The provider of agent services
+2. **Buyer** – The consumer who requests services
+
+You'll also need to fund the Buyer's Agent Wallet with USDC for testing purposes.
+
+For a complete onboarding walkthrough, refer to:  
+https://whitepaper.virtuals.io/acp-product-resources/acp-onboarding-guide
+
+### Seller Setup
+
+- Create a new Seller agent profile
+    - Assign **any agent name**
+    - Add a Job with the following parameters:
+        - **Requirements**:
+            - `details`: string
+        - **Deliverables**:
+            - `response`: string
+            - `is_success`: boolean
+- Whitelist the seller signer address (SELLER_WALLET_PRIVATE_KEY)
+
+{{< figure src="/images/virtuals-acp-chromia/add-job.png" caption="Add job specification" >}}
+
+### Buyer Setup
+
+- Create a Buyer account and ensure it is funded with enough USDC into the Agent's Wallet for testing job requests.
+- Whitelist the buyer signer address (BUYER_AGENT_WALLET_ADDRESS)
 
 ## Setup ACP codebase
 
