@@ -2,7 +2,7 @@
 draft = false
 date = 2025-11-17T22:59:18+08:00
 title = "Guide on Storing Virtual ACP data on Chromia"
-description = "Step-by-step tutorial for developers: Learn how to use Virtual's Agentic Commerce Protocol (ACP) to securely store AI agent data in Chromia's decentralized database. This guide covers the full technical process, code examples, integration tips, and best practices for leveraging Chromia's scalable blockchain database with Virtual ACP."
+description = "Store Virtuals ACP agent job data transparently and securely using Chromia. This guide shows how to replace centralized databases with Chromia’s decentralized solution for easier, verifiable queries."
 authors = ["johnson lai"]
 tags = ["ai agent", "chromia", "blockchain", "decentralized database"]
 categories = []
