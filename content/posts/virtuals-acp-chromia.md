@@ -45,7 +45,7 @@ By the end of this tutorial, you'll have a complete ACP agent that:
 - **Tracks job lifecycle** (pending → completed/rejected) in a verifiable way  
 - **Provides transparent data access** through Chromia's PostgreSQL-based queries
 
-You'll build this using Python (popular among AI developers) and Chromia's Rell programming language (similar to GraphQL/ORM syntax). The complete code will be ready to fork and deploy.
+You'll build this using Python (widely adopted by AI developers) and Chromia's Rell smart contract language. All the code from this guide is open source and available to fork at [github.com/superoo7/Chromia-x-ACP](https://github.com/superoo7/Chromia-x-ACP).
 
 # Prerequisites
 
@@ -489,6 +489,11 @@ The Butler bot will process your request. You should see a job completed message
 ## Conclusion
 
 At this point, you've successfully integrated Chromia as a transparent and verifiable database layer for Virtual's ACP.
+
+
+You can find the full, runnable code for both the Chromia smart contract (Rell) and the Python client examples in the public repository:
+
+https://github.com/superoo7/Chromia-x-ACP
 
 ### Next steps
 1. Move your ACP agent to production mode.
