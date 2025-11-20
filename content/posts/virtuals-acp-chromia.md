@@ -2,7 +2,7 @@
 draft = false
 date = 2025-11-17T22:59:18+08:00
 title = "Guide on Storing Virtual ACP data on Chromia"
-description = "Store Virtuals ACP agent job data transparently and securely using Chromia. This guide shows how to replace centralized databases with Chromia’s decentralized solution for easier, verifiable queries."
+description = "With just a few lines of code, transparently and securely store Virtuals ACP agent job data on Chromia. This guide walks through replacing centralized databases with Chromia’s decentralized, verifiable, and easy-to-query solution."
 authors = ["johnson lai"]
 tags = ["ai agent", "chromia", "blockchain", "decentralized database"]
 categories = []
@@ -17,7 +17,7 @@ Most ACP agents today use centralized db for readability, but this approach sacr
 
 What if you could have easy querying without losing decentralization or verifiability?
 
-This guide shows how to use **Chromia as a decentralized database** for ACP agents, combining Chromia's simplicity and dev-friendly query model.
+With just a few lines of code, you can use **Chromia as a decentralized database** for ACP agents—unlocking easy, dev-friendly queries while preserving transparency and simplicity.
 
 {{< figure width="80%" src="/images/virtuals-acp-chromia/acp-overview.png" caption="Overview of ACP Stats" >}}
 
@@ -109,7 +109,7 @@ https://whitepaper.virtuals.io/acp-product-resources/acp-onboarding-guide
 ## Setup ACP codebase
 
 We'll begin by setting up ACP using the official self-evaluation example from the ACP repository:  
-https://github.com/Virtual-Protocol/acp-node/tree/main/examples/acp-base/self-evaluation-v2
+https://github.com/Virtual-Protocol/acp-python/blob/main/examples/acp_base/self_evaluation_v2/
 
 The codebase creates a good foundation of how the seller, buyer & evaluator relationship.
 
