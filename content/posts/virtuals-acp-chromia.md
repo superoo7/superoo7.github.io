@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2025-11-17T22:59:18+08:00
+date = 2025-11-20T17:59:18+08:00
 title = "Guide on Storing Virtual ACP data on Chromia"
 description = "With just a few lines of code, transparently and securely store Virtuals ACP agent job data on Chromia. This guide walks through replacing centralized databases with Chromia’s decentralized, verifiable, and easy-to-query solution."
 authors = ["johnson lai"]
