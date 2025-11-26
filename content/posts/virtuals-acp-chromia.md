@@ -17,7 +17,7 @@ Most ACP agents today use centralized db for readability, but this approach sacr
 
 What if you could have easy querying without losing decentralization or verifiability?
 
-With just a few lines of code, you can use **Chromia as a decentralized database** for ACP agents—unlocking easy, dev-friendly queries while preserving transparency and simplicity.
+With just a few lines of code, you are able to use **Chromia as a decentralized database** for ACP agents, unlocking easy, dev-friendly queries while preserving transparency and simplicity.
 
 {{< figure width="80%" src="/images/virtuals-acp-chromia/acp-overview.png" caption="Overview of ACP Stats" >}}
 
