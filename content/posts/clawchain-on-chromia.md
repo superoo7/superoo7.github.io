@@ -1,8 +1,8 @@
 +++
 draft = false
 date = 2026-02-11T14:00:00+08:00
-title = "How to Use ClawChain on Chromia"
-description = "ClawChain is a 100% on-chain social network built on Chromia. Here is how to register your OpenClaw bot and get it posting on-chain in a few steps."
+title = "How to set up ClawChain"
+description = "Register your OpenClaw bot on ClawChain, the on-chain social network on Chromia, and get it posting in a few minutes."
 authors = ["johnson lai"]
 tags = ["chromia", "blockchain", "clawchain"]
 categories = []
@@ -12,9 +12,11 @@ images = ["/images/clawchain-chromia/cover.png"]
 +++
 
 
-Chromia recently launched [ClawChain](https://blog.chromia.com/introducing-clawchain-ai-a-100-on-chain-agentic-social-network/), a 100% on-chain agentic social network built entirely on the Chromia blockchain. When [Moltbook](https://www.moltbook.com/) launched as an AI-only social network, it went viral for all the wrong reasons. A security researcher single-handedly registered 1 million fake agents on the platform, exposing how trivially easy it was to flood the network with fake identities. With no way to verify whether a post came from a real agent or an impersonator, the platform collapsed under its own hype.
+[ClawChain](https://blog.chromia.com/introducing-clawchain-ai-a-100-on-chain-agentic-social-network/) is an on-chain social network on Chromia where only AI agents can post. Think of it as a social feed, but every account and every post lives on the blockchain.
 
-ClawChain tackles this head-on by anchoring every identity and interaction on-chain, making fake accounts verifiably impossible. No throwaway accounts, no anonymous spam floods, just verifiable, blockchain-backed participants. In this guide, I'll walk you through how to connect your **OpenClaw bot** to ClawChain and get it posting on-chain.
+Why does that matter? When [Moltbook](https://www.moltbook.com/) launched as an AI-only social network, a security researcher registered 1 million fake agents on it. There was no way to tell real agents from fakes, and the platform fell apart. ClawChain avoids this by requiring a wallet transaction to register and a verified X account to claim your agent, so spinning up fake accounts at scale isn't really feasible.
+
+This post walks through connecting an OpenClaw bot to ClawChain.
 
 {{< figure src="/images/clawchain-chromia/clawchain-site.png" caption="ClawChain site" >}}
 
@@ -23,29 +25,29 @@ ClawChain tackles this head-on by anchoring every identity and interaction on-ch
 
 - Set up an OpenClaw bot at [openclaw.ai](https://openclaw.ai/)
 
-## Registering Your Agent
+## Registering your agent
 
-Head to [clawchain.ai](https://www.clawchain.ai/) and click **"Register Agent"**. The platform is agent-only, humans can browse but not post. To register, copy the instruction shown on the page and send it to your OpenClaw bot via any connected chat app or the dashboard chat.
+Go to [clawchain.ai](https://www.clawchain.ai/) and click "Register Agent". Humans can browse ClawChain but can't post, so you need to register through your bot. Copy the instruction shown on the page and send it to your OpenClaw bot through any connected chat app or the dashboard chat.
 
 ```
 Read https://www.clawchain.ai/skill.md and follow the instructions to join ClawChain
 ```
 
-Your bot will read the skill file and register its account by itself. Once done, it will share a claim link with you to complete the process.
+Your bot reads the skill file and registers itself. Once it's done, it sends you a claim link.
 
 {{< figure src="/images/clawchain-chromia/chat.png" caption="Setting up clawchain on Telegram" >}}
 
 
-## Claiming Your Agent
+## Claiming your agent
 
-Follow the claim link your bot provides. You'll land on a page like `https://www.clawchain.ai/claim/<your-claim-id>`. To complete the claim:
+Open the claim link your bot sends you. You'll land on a page like `https://www.clawchain.ai/claim/<your-claim-id>`. From there:
 
-1. Connect your wallet (MetaMask or equivalent)
-2. Sign the on-chain transaction
+1. Connect your wallet (MetaMask or similar)
+2. Sign the transaction
 
-The claim requires an actual on-chain transaction from your wallet. Without it, your agent stays unclaimed on the blockchain.
+This is an actual on-chain transaction, so you need a wallet with a bit of gas. Without signing, your agent stays unclaimed.
 
-Once the transaction goes through, you'll be prompted to post a verification tweet from your X account:
+After the transaction confirms, ClawChain asks you to post a verification tweet from your X account:
 
 ```
 I'm claiming my AI agent "ClawChainBot"
@@ -53,21 +55,21 @@ on @claw_chain 🦞
 Verification: claw-XXXX
 ```
 
-This step ties your bot to your X identity, proving ownership, preventing duplicates, and enforcing the one bot per human rule that keeps ClawChain spam-free.
+This ties your bot to your X account. It's how ClawChain enforces the one-bot-per-human rule and prevents duplicate registrations.
 
-{{< figure src="/images/clawchain-chromia/claim.png" caption="You've successfully signed up a ClawChain account" >}}
+{{< figure src="/images/clawchain-chromia/claim.png" caption="Claiming a ClawChain account" >}}
 
-## Next Steps
+## What you can do now
 
-Your agent is now live on ClawChain. Just text your bot to start interacting with the network, no extra setup needed:
+That's it. Your agent is on ClawChain. Just message your bot and tell it what to do:
 
-- **Create a post**: Ask your bot to write and publish a post on ClawChain
-- **Interact with other agents**: Ask your bot to browse the feed and reply to other agents
+- Ask it to write and publish a post
+- Ask it to browse the feed and reply to other agents
 
-Since every post and reply is an on-chain transaction on Chromia, all activity is transparent and permanently verifiable. If you are adventurous, each post on ClawChain links directly to the Chromia block explorer, so you can inspect every interaction on-chain yourself.
+Every post and reply is a transaction on Chromia, so everything is public and verifiable. Each post links to the Chromia block explorer if you want to poke around.
 
-## Conclusion
+## Wrapping up
 
-ClawChain is an early but promising answer to a real problem in the AI agent space. The Moltbook saga showed how quickly an agent social network can be overrun when there are no guardrails. By building on Chromia and requiring on-chain identity from day one, ClawChain makes that kind of abuse significantly harder.
+ClawChain is still early, but I think the on-chain identity requirement is the right call. What happened with Moltbook showed how fast an agent network falls apart without it. If you already have an OpenClaw bot, the whole setup takes a few minutes.
 
-If you already have an OpenClaw bot running, getting it onto ClawChain takes just a few minutes. Give it a try and see what the on-chain agent social graph looks like.
+Follow [@claw_chain](https://x.com/claw_chain) on X to keep up with updates.
