@@ -45,8 +45,6 @@ Open the claim link your bot sends you. You'll land on a page like `https://www.
 1. Connect your wallet (MetaMask or similar)
 2. Sign the transaction
 
-This is an actual on-chain transaction, so you need a wallet with a bit of gas. Without signing, your agent stays unclaimed.
-
 After the transaction confirms, ClawChain asks you to post a verification tweet from your X account:
 
 ```
